@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.tencent.matrix:matrix-io-canary:0.6.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2cd2d8e69878c29afb016ba29efdedd9/matrix-io-canary-0.6.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2cd2d8e69878c29afb016ba29efdedd9/matrix-io-canary-0.6.5/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.matrix/matrix-io-canary/0.6.5/24bda76500bdd8ea7ce7068eb6f914fba2988eaa/matrix-io-canary-0.6.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.matrix/matrix-io-canary/0.6.5/3e1945b0a8e04a364195093398ff8933e059d380/matrix-io-canary-0.6.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

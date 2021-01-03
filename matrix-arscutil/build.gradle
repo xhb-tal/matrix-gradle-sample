@@ -1,0 +1,20 @@
+apply plugin: 'java'
+
+version rootProject.ext.VERSION_NAME
+group rootProject.ext.GROUP
+
+[compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'commons-io:commons-io:2.6'
+    implementation 'matrix:matrix-commons:0.6'
+}
+
+
+project.ext.isRelease = true
+project.ext.LIB_VERSION = "0.6"
+project.ext.LIB_GROUP_ID = "matrix"
+project.ext.LIB_ARTIFACT_ID = "matrix-arscutil"
+
+apply from: '../lib-config.gradle'

@@ -1,0 +1,47 @@
+apply plugin: 'groovy'
+apply plugin: 'java'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation gradleApi()
+    implementation localGroovy()
+//    implementation project(':matrix-commons')
+    implementation 'matrix:matrix-commons:0.6'
+
+    implementation group: 'org.ow2.asm', name: 'asm', version: '5.1'
+    implementation group: 'org.ow2.asm', name: 'asm-commons', version: '5.1'
+    implementation 'com.android.tools.build:gradle:3.5.3'
+//    implementation project(':matrix-arscutil')
+    implementation 'matrix:matrix-arscutil:0.6'
+
+}
+sourceSets {
+    main {
+        groovy {
+            srcDir '../matrix-gradle-plugin/src/main/groovy'
+        }
+
+        java {
+            srcDir "../matrix-gradle-plugin/src/main/java"
+        }
+
+        resources {
+            srcDir '../matrix-gradle-plugin/src/main/resources'
+        }
+    }
+}
+
+version rootProject.ext.VERSION_NAME
+group rootProject.ext.GROUP
+
+compileGroovy {
+    sourceCompatibility = 1.7
+    targetCompatibility = 1.7
+}
+
+project.ext.isRelease = false
+project.ext.LIB_VERSION = "1.0.0"
+project.ext.LIB_GROUP_ID = "matrix"
+project.ext.LIB_ARTIFACT_ID = "matrix-plugin"
+apply from: '../lib-config.gradle'
+

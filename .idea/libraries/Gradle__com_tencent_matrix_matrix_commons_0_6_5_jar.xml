@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.tencent.matrix:matrix-commons:0.6.5@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.matrix/matrix-commons/0.6.5/c35bc1f55636fc26f8b89337b494752616d08485/matrix-commons-0.6.5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.matrix/matrix-commons/0.6.5/db190495a2394bf40c1c21447c73ace1bf4cb84f/matrix-commons-0.6.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.matrix/matrix-commons/0.6.5/b6a4a6319a728f06ce29276307d5f1c15ca804fd/matrix-commons-0.6.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

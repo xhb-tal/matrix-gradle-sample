@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: matrix-commons.matrix-commons-0.6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/matrix-commons/build/libs/matrix-commons-0.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

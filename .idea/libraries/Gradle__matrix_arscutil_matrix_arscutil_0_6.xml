@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: matrix-arscutil.matrix-arscutil-0.6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/matrix-arscutil/build/libs/matrix-arscutil-0.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

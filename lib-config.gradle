@@ -1,0 +1,53 @@
+final String LIB_VERSION = project.ext.LIB_VERSION
+
+def isAndroid() { return project.hasProperty("android") }
+
+if (isAndroid()) { // Android libraries
+    println "Android case"
+    task sourcesJar(overwrite: true, type: Jar) {
+        classifier = 'sources'
+        from android.sourceSets.main.java.srcDirs
+    }
+    task javadoc(overwrite: true, type: Javadoc) {
+        source = android.sourceSets.main.java.srcDirs
+        classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+    }
+} else { // Java libraries
+    println "Java case"
+
+    task sourcesJar(overwrite: true, type: Jar, dependsOn: classes) {
+        classifier = 'sources'
+        from sourceSets.main.allSource
+    }
+}
+
+task javadocJar(overwrite: true, type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+// 上传源文件
+artifacts {
+//    archives javadocJar
+    archives sourcesJar
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+apply plugin: 'maven'
+
+def localRepoURL = 'file://' + new File(System.getProperty('user.home'), '.m2/repository').absolutePath
+
+uploadArchives {
+    repositories.mavenDeployer {
+        final String version = project.ext.isRelease ? LIB_VERSION : "$LIB_VERSION-SNAPSHOT"
+        repository(url: localRepoURL)
+        pom.name = "xhb_matrix"
+        pom.groupId = project.ext.LIB_GROUP_ID
+        pom.artifactId = project.ext.LIB_ARTIFACT_ID
+        pom.version = version
+        pom.packaging = 'aar'
+    }
+}

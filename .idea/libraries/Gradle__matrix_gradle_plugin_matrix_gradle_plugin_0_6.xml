@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: matrix-gradle-plugin.matrix-gradle-plugin-0.6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/matrix-gradle-plugin/build/libs/matrix-gradle-plugin-0.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

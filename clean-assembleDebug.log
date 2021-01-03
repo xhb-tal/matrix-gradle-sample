@@ -1,0 +1,96 @@
+Starting a Gradle Daemon (subsequent builds will be faster)
+hello gradle !
+init all
+
+> Configure project :app
+WARNING: Configuration 'androidTestCompile' is obsolete and has been replaced with 'androidTestImplementation'.
+It will be removed soon. For more information see: http://d.android.com/r/tools/update-dependency-configurations.html
+[INFO][MatrixTraceTransform]successfully inject task:transformClassesWithDexBuilderForDebug
+[INFO][Matrix.MatrixPlugin]removeUnusedResources  enable = true
+ variant = debug
+ needSign = true
+ shrinkArsc = true
+ apkSignerPath = /Users/yangjianfei/Library/Android/sdk/build-tools/28.0.2/apksigner
+ unusedResources = []
+ ignoreResources = [R.id.*, R.bool.*]
+        
+WARNING: API 'variant.getPackageApplication()' is obsolete and has been replaced with 'variant.getPackageApplicationProvider()'.
+It will be removed at the end of 2019.
+For more information, see https://d.android.com/r/tools/task-configuration-avoidance.
+To determine what is calling variant.getPackageApplication(), use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+WARNING: API 'variant.getAssemble()' is obsolete and has been replaced with 'variant.getAssembleProvider()'.
+It will be removed at the end of 2019.
+For more information, see https://d.android.com/r/tools/task-configuration-avoidance.
+To determine what is calling variant.getAssemble(), use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+WARNING: The specified Android SDK Build Tools version (28.0.2) is ignored, as it is below the minimum supported version (28.0.3) for Android Gradle Plugin 3.5.0.
+Android SDK Build Tools 28.0.3 will be used.
+To suppress this warning, remove "buildToolsVersion '28.0.2'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Task :app:clean
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :app:compileDebugRenderscript NO-SOURCE
+> Task :app:checkDebugManifest
+> Task :app:generateDebugBuildConfig
+> Task :app:mainApkListPersistenceDebug
+> Task :app:generateDebugResValues
+> Task :app:generateDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:processDebugManifest
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders
+> Task :app:generateDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:validateSigningDebug
+> Task :app:signingConfigWriterDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:mergeDebugResources
+> Task :app:processDebugResources
+> Task :app:mergeExtDexDebug
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+> Task :app:javaPreCompileDebug
+
+> Task :app:compileDebugJavaWithJavac
+
+> Task :app:compileDebugSources
+[WARN][MatrixTraceTransform][getMethodFromBaseMethod] not exist!/Users/yangjianfei/myWidget/github/matrix-master/samples/sample-android/app/matrixTrace/methodMapping.txt
+[INFO][MatrixTraceTransform][ParseMappingTask#run] cost:3ms, black size:4, collect 0 method from /Users/yangjianfei/myWidget/github/matrix-master/samples/sample-android/app/matrixTrace/methodMapping.txt
+[INFO][MethodCollector][saveIgnoreCollectedMethod] size:72 path:/Users/yangjianfei/myWidget/github/matrix-master/samples/sample-android/app/build/outputs/mapping/debug/ignoreMethodMapping.txt
+[INFO][MethodCollector][saveCollectedMethod] size:130 incrementCount:129 path:/Users/yangjianfei/myWidget/github/matrix-master/samples/sample-android/app/build/outputs/mapping/debug/methodMapping.txt
+
+> Task :app:transformClassesWithDexBuilderForDebug
+[INFO][MatrixTraceTransform][doTransform] Step(1)[Parse]... cost:4ms
+[INFO][MatrixTraceTransform][doTransform] Step(2)[Collection]... cost:45ms
+[INFO][MatrixTraceTransform][doTransform] Step(3)[Trace]... cost:154ms
+[INFO][Matrix.MatrixTraceTransform][transform] cost time: 816ms DexArchiveBuilderTransform:612ms MatrixTraceTransform:204ms
+
+> Task :app:mergeDebugJavaResource
+> Task :app:mergeDexDebug
+
+> Task :app:packageDebug
+/Users/yangjianfei/.gradle/caches/modules-2/files-2.1/com.tencent.matrix/matrix-apk-canary/0.6.5/911823fd9bfa369c86b56ec8fb98e09ec8803f7/matrix-apk-canary-0.6.5.jar
+WARNING: API 'variantOutput.getPackageApplication()' is obsolete and has been replaced with 'variant.getPackageApplicationProvider()'.
+It will be removed at the end of 2019.
+For more information, see https://d.android.com/r/tools/task-configuration-avoidance.
+To determine what is calling variantOutput.getPackageApplication(), use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+
+> Task :app:removeDebugUnusedResources
+[INFO][Matrix.MatrixPlugin.RemoveUnusedResourcesTask]variant debug, removeResources
+[INFO][Matrix.MatrixPlugin.RemoveUnusedResourcesTask]original apk file /Users/yangjianfei/myWidget/github/matrix-master/samples/sample-android/app/build/outputs/apk/debug/app-debug.apk
+[INFO][Matrix.MatrixPlugin.RemoveUnusedResourcesTask]unused resources count:0
+[INFO][Matrix.MatrixPlugin.RemoveUnusedResourcesTask]shrink apk size 265.092773 KB
+[INFO][Matrix.MatrixPlugin.RemoveUnusedResourcesTask]resign apk...
+[INFO][Matrix.MatrixPlugin.RemoveUnusedResourcesTask]cost time 1.307000 s
+
+> Task :app:assembleDebug
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.4.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 33s
+26 actionable tasks: 26 executed

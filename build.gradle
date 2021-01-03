@@ -1,0 +1,31 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        google()
+        jcenter()
+//        maven {
+//            url './matrix-gradle-plugin'
+//        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.0'
+        classpath 'com.google.code.gson:gson:2.7'
+//        classpath ("com.tencent.matrix:matrix-gradle-plugin:${MATRIX_VERSION}") { changing = true }
+
+        classpath 'matrix:matrix-plugin:1.0.0-SNAPSHOT'
+    }
+}
+
+allprojects {
+    repositories {
+        mavenLocal()
+        jcenter()
+        google()
+    }
+}
+
+ext {
+    VERSION_NAME = "0.6"
+    GROUP = "matrix"
+}
+

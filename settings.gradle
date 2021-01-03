@@ -1,0 +1,8 @@
+include ':app', ':matrix-commons', ':matrix-arscutil', ":matrix-gradle-plugin"
+
+project(':matrix-commons').projectDir = new File(settingsDir, "matrix-commons")
+project(':matrix-arscutil').projectDir = new File(settingsDir, "matrix-arscutil")
+project(':matrix-gradle-plugin').projectDir = new File(settingsDir, "matrix-gradle-plugin")
+
+
+println("setting init")

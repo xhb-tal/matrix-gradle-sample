@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.tencent.matrix:matrix-resource-canary-android:0.6.5@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f9a3e35baf1ecde760cfcc56586f9085/matrix-resource-canary-android-0.6.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f9a3e35baf1ecde760cfcc56586f9085/matrix-resource-canary-android-0.6.5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/05f76334821610578f22cd07c6768e52/matrix-resource-canary-android-0.6.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/05f76334821610578f22cd07c6768e52/matrix-resource-canary-android-0.6.5/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.matrix/matrix-resource-canary-android/0.6.5/280f0e8bbefea16ce6b2ffdcc47396db7bbc8764/matrix-resource-canary-android-0.6.5-javadoc.jar!/" />

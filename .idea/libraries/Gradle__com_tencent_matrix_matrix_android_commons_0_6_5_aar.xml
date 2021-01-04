@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.tencent.matrix:matrix-android-commons:0.6.5@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/111f32015103d9abe9f10c40ad74f1a0/matrix-android-commons-0.6.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/111f32015103d9abe9f10c40ad74f1a0/matrix-android-commons-0.6.5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2cf1720c36b4e20f999532f04f1408b3/matrix-android-commons-0.6.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2cf1720c36b4e20f999532f04f1408b3/matrix-android-commons-0.6.5/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.matrix/matrix-android-commons/0.6.5/a0908439e842671dad8ed91af9bfe3fa68863d1c/matrix-android-commons-0.6.5-javadoc.jar!/" />

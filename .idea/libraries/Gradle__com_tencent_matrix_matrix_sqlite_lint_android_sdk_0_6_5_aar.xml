@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.6.5@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aa0822ecbe335840a7f5c01ff01e0de3/matrix-sqlite-lint-android-sdk-0.6.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aa0822ecbe335840a7f5c01ff01e0de3/matrix-sqlite-lint-android-sdk-0.6.5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ce470187a49dfcaded3f2d07a3d825f4/matrix-sqlite-lint-android-sdk-0.6.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ce470187a49dfcaded3f2d07a3d825f4/matrix-sqlite-lint-android-sdk-0.6.5/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.matrix/matrix-sqlite-lint-android-sdk/0.6.5/abea49e8220f3c8b230d8d2a0f4043fa4352cc86/matrix-sqlite-lint-android-sdk-0.6.5-javadoc.jar!/" />

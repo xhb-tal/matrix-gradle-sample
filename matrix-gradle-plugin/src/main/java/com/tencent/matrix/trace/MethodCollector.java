@@ -55,6 +55,7 @@ public class MethodCollector {
         this.executor = executor;
         this.mappingCollector = Objects.requireNonNull(mappingCollector);
         this.configuration = configuration;
+        Log.i(TAG, "enter methodId:%d", methodId.get());
         this.methodId = methodId;
         this.collectedMethodMap = collectedMethodMap;
     }
@@ -234,7 +235,8 @@ public class MethodCollector {
 
         methodList.addAll(collectedMethodMap.values());
 
-        Log.i(TAG, "[saveCollectedMethod] size:%s incrementCount:%s path:%s", collectedMethodMap.size(), incrementCount.get(), methodMapFile.getAbsolutePath());
+        Log.i(TAG, "[saveCollectedMethod] size:%s incrementCount:%s maxMethodId:%d path:%s",
+            collectedMethodMap.size(), incrementCount.get(), methodId.get(), methodMapFile.getAbsolutePath());
 
         Collections.sort(methodList, new Comparator<TraceMethod>() {
             @Override
